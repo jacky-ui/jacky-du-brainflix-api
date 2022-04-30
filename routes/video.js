@@ -25,4 +25,12 @@ router.get("/", (_req, res) => {
     res.status(200).send(sideVideosContent);
 });
 
+// Request for specific video content
+router.get("/video/:videoId", (req, res) => {
+    const videos = readVideosJson();
+    const selectedVideo = videos.find((video) => video.id === req.params.videoId);
+    
+    res.status(200).send(selectedVideo);
+});
+
 module.exports = router;
