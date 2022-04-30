@@ -20,6 +20,10 @@ app.use("/videos", videoRoutes);
 // For specific video request
 app.use("/", videoRoutes);
 
+// app.post("/videos", (req, res) => {
+
+//     });
+
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
