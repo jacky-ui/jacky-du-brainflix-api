@@ -49,10 +49,11 @@ router.post("/", (req, res) => {
         title: req.body.title,
         image: "https://media.wired.co.uk/photos/607d91994d40fbb952b6ad64/4:3/w_2664,h_1998,c_limit/wired-meme-nft-brian.jpg",
         id: uniqid(),
-        views: "0",
-        likes: "0",
-        timeStamp: '1626032763000',
+        views: 2043765,
+        likes: 400058,
+        timeStamp: 1631892222000,
         description: "This is a video description",
+        channel: "BrainStation",
         comments: [
             {
                 "name": "John Doe",

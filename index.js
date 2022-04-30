@@ -10,10 +10,6 @@ app.use(express.json());
 app.use(express.static("public"));
 app.use(cors());
 
-app.get("/", (_req, res) => {
-    res.send("Hello World. Connected");
-});
-
 // For side video requests
 app.use("/videos", videoRoutes);
 
