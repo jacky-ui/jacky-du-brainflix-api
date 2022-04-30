@@ -6,7 +6,7 @@ const fs = require("fs");
 const videoRoutes = require("./routes/video.js")
 
 app.use(express.json());
-
+app.use(express.static("public"));
 
 app.get("/", (_req, res) => {
     res.send("Hello World. Connected");
