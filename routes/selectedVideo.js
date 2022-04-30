@@ -10,4 +10,9 @@ function readVideosJson() {
     return videoJsonParsed;
 }
 
+router.get("/", (_req, res) => {
+    console.log("testing call")
+    res.status(200).send("Hello, testing.")
+})
+
 module.exports = router;
